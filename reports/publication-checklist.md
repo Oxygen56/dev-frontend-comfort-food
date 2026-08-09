@@ -10,8 +10,8 @@
 - [x] Codex assistance disclosed in both drafts
 - [x] Third-party-rights review complete; no external assets shipped
 - [x] Final local gate: 14/14
-- [ ] Public repository reachable without authentication
-- [ ] GitHub Pages demo reachable without authentication
+- [x] Public repository reachable without authentication
+- [x] GitHub Pages demo reachable without authentication
 - [ ] DEV challenge registration confirmed in logged-in UI
 
 ## CSS Art post

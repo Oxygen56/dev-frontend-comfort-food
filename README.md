@@ -4,10 +4,10 @@ Two original entries for the [DEV Frontend Challenge: Comfort Food](https://dev.
 
 ## Entries
 
-- **CSS Art:** a pure HTML/CSS serving ritual. Choose tomato-led, balanced, or egg-led; then lift the lid. No JavaScript, SVG, canvas, images, web fonts, or third-party code.
-- **Perfect Landing:** a progressive-enhancement landing page with a keyboard-native ratio dial. JavaScript makes the bowl and copy respond; the complete story and three ratios remain available without it.
+- **[CSS Art](https://oxygen56.github.io/dev-frontend-comfort-food/css-art/):** a pure HTML/CSS serving ritual. Choose tomato-led, balanced, or egg-led; then lift the lid. No JavaScript, SVG, canvas, images, web fonts, or third-party code.
+- **[Perfect Landing](https://oxygen56.github.io/dev-frontend-comfort-food/perfect-landing/):** a progressive-enhancement landing page with a keyboard-native ratio dial. JavaScript makes the bowl and copy respond; the complete story and three ratios remain available without it.
 
-Open `docs/index.html`, or serve the `docs` directory with any static server. The public demo is designed for GitHub Pages.
+Open the [two-entry demo hub](https://oxygen56.github.io/dev-frontend-comfort-food/), or serve the `docs` directory with any static server.
 
 ## Verification
 
