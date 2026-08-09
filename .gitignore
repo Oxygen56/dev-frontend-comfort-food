@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+AGENTS.md
+reports/playwright-report/
+reports/test-results/
+test-results/
+playwright-report/
+experiments/
+.competition/
+requirements/
+scripts/install_contest_tools.sh
+scripts/install_web3_tools.sh

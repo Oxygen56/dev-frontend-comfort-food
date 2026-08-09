@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7efdc">
+  <meta name="description" content="The Home Ratio turns one tomato-and-egg dish into an interactive memory you can tune by feel.">
+  <title>The Home Ratio — Find the balance you remember</title>
+  <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the experience</a>
+  <header class="site-header">
+    <a class="brand" href="../" aria-label="The Home Ratio, back to both entries">
+      <span aria-hidden="true">家</span>
+      <b>The Home Ratio</b>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#why">Why a ratio?</a>
+      <a href="#keep">Keep yours</a>
+    </nav>
+    <a class="text-link" href="../css-art/">CSS Art ↗</a>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Comfort food, tuned by memory</p>
+        <h1 id="hero-title">Not a recipe.<br>A <em>ratio.</em></h1>
+        <p class="lede">Slide between bright tomato and soft egg. There is no correct answer—only the balance that makes the table feel familiar.</p>
+        <a class="primary-action" href="#ratio-lab">Find your home ratio <span aria-hidden="true">↓</span></a>
+        <ul class="proof-list" aria-label="Experience qualities">
+          <li>One familiar dish</li>
+          <li>Three valid memories</li>
+          <li>Zero borrowed assets</li>
+        </ul>
+      </div>
+
+      <div class="hero-art" aria-label="A stylized bowl of tomato and egg whose ingredients respond to the ratio control">
+        <p class="vertical-type" aria-hidden="true">番茄 · 鸡蛋 · 回家吃饭</p>
+        <div class="sun" aria-hidden="true"></div>
+        <div class="plate-shadow" aria-hidden="true"></div>
+        <div class="food-bowl" aria-hidden="true">
+          <div class="food">
+            <i class="tomato t1"></i><i class="tomato t2"></i><i class="tomato t3"></i><i class="tomato t4"></i>
+            <i class="egg e1"></i><i class="egg e2"></i><i class="egg e3"></i><i class="egg e4"></i>
+            <i class="green g1"></i><i class="green g2"></i><i class="green g3"></i>
+          </div>
+          <div class="bowl-face"><span>家的比例</span></div>
+        </div>
+        <p class="made-note">made by feel<br>served with care</p>
+      </div>
+    </section>
+
+    <section class="ratio-lab" id="ratio-lab" aria-labelledby="lab-title">
+      <div class="lab-heading">
+        <p class="section-number">01 / Turn the memory</p>
+        <h2 id="lab-title">Where does home sit?</h2>
+        <p>A real range control is hiding in plain sight: click it, tap it, or use the arrow keys. The story and bowl answer together.</p>
+      </div>
+
+      <div class="dial-card">
+        <div class="ratio-readout" aria-hidden="true">
+          <span id="tomato-number">50</span>
+          <i>:</i>
+          <span id="egg-number">50</span>
+        </div>
+        <div class="range-wrap">
+          <label for="ratio">Your tomato-to-egg memory</label>
+          <input id="ratio" type="range" min="30" max="70" step="5" value="50" aria-describedby="ratio-hint ratio-status">
+          <div class="range-labels" aria-hidden="true"><span>more egg</span><span>in balance</span><span>more tomato</span></div>
+          <p id="ratio-hint">Tip: focus the dial and use ← or → for five-point steps.</p>
+        </div>
+        <div class="memory-result">
+          <div>
+            <p class="result-label">This bowl feels</p>
+            <h3 id="ratio-name">Quietly balanced</h3>
+          </div>
+          <p id="ratio-copy">Bright edges, soft folds, neither asking to be the lead.</p>
+          <p id="ratio-status" class="visually-hidden" aria-live="polite">Balanced: 50 percent tomato and 50 percent egg.</p>
+        </div>
+      </div>
+
+      <div class="no-js-ratios" aria-label="Three example ratios available without JavaScript">
+        <article><b>40:60</b><h3>Soft landing</h3><p>Egg-led, gentle, and made for slow mornings.</p></article>
+        <article><b>50:50</b><h3>Quiet balance</h3><p>Bright edges and soft folds meet in the middle.</p></article>
+        <article><b>60:40</b><h3>Window light</h3><p>Tomato-led, vivid, and a little more awake.</p></article>
+      </div>
+    </section>
+
+    <section class="why" id="why" aria-labelledby="why-title">
+      <div class="why-title">
+        <p class="section-number">02 / Why a ratio?</p>
+        <h2 id="why-title">Recipes record steps.<br><em>Ratios record people.</em></h2>
+      </div>
+      <div class="why-grid">
+        <article>
+          <span>01</span>
+          <h3>Specific, not fixed</h3>
+          <p>Tomato and egg gives us a shared shape. The dial protects the differences inside it.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Felt, not measured</h3>
+          <p>The numbers make change visible. The language keeps the experience human.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Made to include</h3>
+          <p>Keyboard controls, strong focus, reduced motion, 320-pixel reflow, and a full no-JS path are part of the design.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="keep" id="keep" aria-labelledby="keep-title">
+      <p class="section-number">03 / Keep the feeling</p>
+      <div>
+        <h2 id="keep-title">Write down the ratio.<br>Leave the recipe open.</h2>
+        <p id="share-line">My Home Ratio is 50:50 — bright edges, soft folds.</p>
+        <button type="button" id="copy-ratio">Copy my ratio</button>
+        <p class="copy-status" id="copy-status" aria-live="polite"></p>
+        <noscript><p>JavaScript is off, so copying is manual. Your complete ratio guide is still above.</p></noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand inverse" href="#main"><span aria-hidden="true">家</span><b>The Home Ratio</b></a>
+    <p>Original words and browser-native shapes.<br>No images. No web fonts. No external runtime code.</p>
+    <p>Perfect Landing entry<br>DEV Frontend Challenge · 2026</p>
+  </footer>
+</body>
+</html>

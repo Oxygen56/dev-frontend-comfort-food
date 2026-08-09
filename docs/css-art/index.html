@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A pure CSS serving ritual for tomato and egg, with three remembered ratios.">
+  <title>The Home Ratio — CSS Art</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#controls">Skip to the ratio controls</a>
+  <header class="masthead">
+    <a class="back" href="../" aria-label="Back to both entries">← Both entries</a>
+    <p>DEV Frontend Challenge · CSS Art</p>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="art-title">
+      <p class="kicker">番茄炒蛋 · tomato + egg</p>
+      <h1 id="art-title">The Home<br><em>Ratio</em></h1>
+      <p class="intro-copy">No single version owns the table. Choose the balance you remember, then lift the lid.</p>
+    </section>
+
+    <section class="art-shell" aria-label="Interactive pure CSS artwork">
+      <fieldset class="ratio-controls" id="controls">
+        <legend>Choose your remembered ratio</legend>
+        <input type="radio" name="ratio" id="tomato-led">
+        <label for="tomato-led"><b>60</b><span>tomato-led</span></label>
+        <input type="radio" name="ratio" id="balanced" checked>
+        <label for="balanced"><b>50</b><span>in balance</span></label>
+        <input type="radio" name="ratio" id="egg-led">
+        <label for="egg-led"><b>40</b><span>egg-led</span></label>
+
+        <div class="scene">
+          <div class="window" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <p class="memory-note note-tomato">bright first,<br>soft after</p>
+          <p class="memory-note note-balanced">the ratio<br>we never wrote</p>
+          <p class="memory-note note-egg">soft first,<br>bright after</p>
+
+          <input class="lid-toggle" type="checkbox" id="serve-warm">
+          <div class="table" aria-hidden="true">
+            <div class="steam steam-one"></div>
+            <div class="steam steam-two"></div>
+            <div class="steam steam-three"></div>
+            <div class="lid"><i></i></div>
+            <div class="bowl">
+              <div class="rim">
+                <div class="dish">
+                  <i class="tomato t1"></i><i class="tomato t2"></i><i class="tomato t3"></i><i class="tomato t4"></i><i class="tomato t5"></i>
+                  <i class="egg e1"></i><i class="egg e2"></i><i class="egg e3"></i><i class="egg e4"></i><i class="egg e5"></i>
+                  <i class="scallion s1"></i><i class="scallion s2"></i><i class="scallion s3"></i><i class="scallion s4"></i>
+                  <span class="shine"></span>
+                </div>
+              </div>
+              <div class="bowl-body"><span>家的比例</span></div>
+            </div>
+            <div class="chopsticks"><i></i><i></i></div>
+          </div>
+          <label class="serve-control" for="serve-warm">
+            <span class="closed-label">Lift the lid</span>
+            <span class="open-label">Set it down</span>
+            <small>Space / Enter</small>
+          </label>
+          <p class="css-stamp">100% HTML + CSS</p>
+        </div>
+      </fieldset>
+    </section>
+
+    <section class="afterword" aria-labelledby="afterword-title">
+      <p>01 / What changes</p>
+      <h2 id="afterword-title">A ratio is not a verdict.</h2>
+      <div>
+        <p>The radio controls reshape the same CSS-drawn ingredients: tomato pieces swell or recede, egg ribbons answer, the sauce shifts, and the note changes.</p>
+        <p>The lid ritual is another native form control. Keyboard, touch, mouse, no JavaScript—every route reaches the same warm bowl.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Drawn entirely with borders, gradients, transforms, pseudo-elements, and native form controls.</p>
+    <a href="../perfect-landing/">Visit the Perfect Landing entry →</a>
+  </footer>
+</body>
+</html>
