@@ -2,13 +2,13 @@
 title: "The Home Ratio: A Pure-CSS Serving Ritual"
 published: true
 description: "Choose the tomato-and-egg balance you remember, then lift the lid—using only semantic HTML and CSS."
-tags: frontendchallenge, cssart, css, webdev
+tags: frontendchallenge, devchallenge, css
 cover_image: https://oxygen56.github.io/dev-frontend-comfort-food/assets/css-art-cover.png
 ---
 
-{% embed https://oxygen56.github.io/dev-frontend-comfort-food/css-art/ %}
+_This is a submission for [Frontend Challenge - Comfort Food Edition, CSS Art](https://dev.to/challenges/frontend-2026-07-29)._
 
-## What I built
+## Inspiration
 
 **The Home Ratio** is an interactive CSS artwork about 番茄炒蛋—tomato and egg—and the small differences that make a familiar dish feel like one particular home.
 
@@ -18,10 +18,14 @@ There is no “authentic” winning ratio. The interaction is the point: a share
 
 ## Demo
 
+{% embed https://oxygen56.github.io/dev-frontend-comfort-food/css-art/ %}
+
 - [Open the live CSS Art experience](https://oxygen56.github.io/dev-frontend-comfort-food/css-art/)
 - [Read the source](https://github.com/Oxygen56/dev-frontend-comfort-food/tree/main/docs/css-art)
 
-## How I drew it
+## Journey
+
+### How I drew it
 
 The artwork uses only HTML and CSS:
 
@@ -33,16 +37,14 @@ The artwork uses only HTML and CSS:
 
 There is no JavaScript, SVG, canvas, image, icon library, external font, or runtime dependency.
 
-## Accessibility and resilience
+### Accessibility and resilience
 
 The controls are native form elements with visible labels and strong focus states. The complete piece works with touch, mouse, Tab, arrow keys, Space, and Enter. It reflows without horizontal scrolling at 320 px, and `prefers-reduced-motion` reduces every animation and transition to an effectively static state.
 
 The repository includes automated browser checks for keyboard operation, 320 px reflow, reduced motion, external requests, console errors, and WCAG A/AA issues with axe-core.
 
-## AI assistance and rights
+### AI assistance and rights
 
 OpenAI Codex was used as the primary implementation assistant for research synthesis, interaction prototyping, HTML/CSS development, test authoring, and technical-writing support. A human directed the concept and acceptance criteria and reviewed the final source, behavior, accessibility evidence, third-party-rights status, and public claims.
 
 All shipped visuals and copy are original to this entry. No generated media or third-party visual, font, text, brand mark, API, or dataset is included.
-
-<!-- DEV Challenge marker: frontend-2026-07-29 -->

@@ -17,7 +17,7 @@
 ## CSS Art post
 
 - [ ] Correct title, cover, canonical demo, and source links
-- [ ] `frontendchallenge`, `cssart`, `css`, `webdev` tags
+- [ ] Official template tags: `frontendchallenge`, `devchallenge`, `css`
 - [ ] Challenge marker present
 - [ ] Published page reachable logged out
 - [ ] Listed in challenge feed
@@ -25,7 +25,7 @@
 ## Perfect Landing post
 
 - [ ] Correct title, cover, canonical demo, and source links
-- [ ] `frontendchallenge`, `landingpage`, `accessibility`, `webdev` tags
+- [ ] Official template tags: `devchallenge`, `frontendchallenge`, `webdev`, `javascript`
 - [ ] Challenge marker present
 - [ ] Published page reachable logged out
 - [ ] Listed in challenge feed
