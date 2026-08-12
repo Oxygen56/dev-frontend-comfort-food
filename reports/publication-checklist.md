@@ -12,20 +12,33 @@
 - [x] Final local gate: 14/14
 - [x] Public repository reachable without authentication
 - [x] GitHub Pages demo reachable without authentication
-- [ ] DEV challenge registration confirmed in logged-in UI
+- [x] DEV challenge registration confirmed in logged-in UI (`Signed Up`)
 
 ## CSS Art post
 
-- [ ] Correct title, cover, canonical demo, and source links
-- [ ] Official template tags: `frontendchallenge`, `devchallenge`, `css`
-- [ ] Challenge marker present
-- [ ] Published page reachable logged out
-- [ ] Listed in challenge feed
+- [x] Correct title, cover, canonical demo, and source links
+- [x] Official template tags: `frontendchallenge`, `devchallenge`, `css`
+- [x] Challenge marker present
+- [x] Published page reachable logged out
+- [x] Listed in challenge feed
+
+Published entry: https://dev.to/oxygen56/the-home-ratio-a-pure-css-serving-ritual-5268
 
 ## Perfect Landing post
 
-- [ ] Correct title, cover, canonical demo, and source links
-- [ ] Official template tags: `devchallenge`, `frontendchallenge`, `webdev`, `javascript`
-- [ ] Challenge marker present
-- [ ] Published page reachable logged out
-- [ ] Listed in challenge feed
+- [x] Correct title, cover, canonical demo, and source links
+- [x] Official template tags: `devchallenge`, `frontendchallenge`, `webdev`, `javascript`
+- [x] Challenge marker present
+- [x] Published page reachable logged out
+- [x] Listed in challenge feed
+
+Published entry: https://dev.to/oxygen56/the-home-ratio-a-landing-page-tuned-by-memory-1af9
+
+## Public verification
+
+Verified on 2026-08-12 Asia/Shanghai without DEV session cookies:
+
+- both published entries returned HTTP 200;
+- both GitHub Pages demos returned HTTP 200;
+- the public GitHub repository returned HTTP 200;
+- both entry titles appeared in the official `frontendchallenge` tag feed.

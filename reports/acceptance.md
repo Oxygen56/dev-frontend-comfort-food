@@ -34,3 +34,12 @@ npm test
 ```
 
 The final run is recorded locally by the competition workspace at `20260810-015152_final-local-gate` with score `1` for the binary acceptance metric `judge-confidence`.
+
+## Publication evidence
+
+Published and publicly verified on 2026-08-12 Asia/Shanghai:
+
+- CSS Art: https://dev.to/oxygen56/the-home-ratio-a-pure-css-serving-ritual-5268
+- Perfect Landing: https://dev.to/oxygen56/the-home-ratio-a-landing-page-tuned-by-memory-1af9
+
+Both entries include their intended cover image, official challenge tags and marker, live demo, public source link, AI-assistance disclosure, and third-party-rights statement. Both titles are visible in the public `frontendchallenge` tag feed.
