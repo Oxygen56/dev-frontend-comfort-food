@@ -6,7 +6,6 @@
   <meta name="theme-color" content="#f7efdc">
   <meta name="description" content="The Home Ratio turns one tomato-and-egg dish into an interactive memory you can tune by feel.">
   <title>The Home Ratio — Find the balance you remember</title>
-  <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
@@ -29,16 +28,16 @@
       <div class="hero-copy">
         <p class="eyebrow"><span></span> Comfort food, tuned by memory</p>
         <h1 id="hero-title">Not a recipe.<br>A <em>ratio.</em></h1>
-        <p class="lede">Slide between bright tomato and soft egg. There is no correct answer—only the balance that makes the table feel familiar.</p>
-        <a class="primary-action" href="#ratio-lab">Find your home ratio <span aria-hidden="true">↓</span></a>
+        <p class="lede">Tune the bowl, choose the kind of table around it, and keep one private word with the result. There is no correct answer—only the version that feels familiar.</p>
+        <a class="primary-action" href="#ratio-lab">Make your memory card <span aria-hidden="true">↓</span></a>
         <ul class="proof-list" aria-label="Experience qualities">
-          <li>One familiar dish</li>
-          <li>Three valid memories</li>
+          <li>Three-step ritual</li>
+          <li>Local-only personalization</li>
           <li>Zero borrowed assets</li>
         </ul>
       </div>
 
-      <div class="hero-art" aria-label="A stylized bowl of tomato and egg whose ingredients respond to the ratio control">
+      <div class="hero-art" role="img" aria-label="A stylized bowl of tomato and egg whose ingredients respond to the ratio control">
         <p class="vertical-type" aria-hidden="true">番茄 · 鸡蛋 · 回家吃饭</p>
         <div class="sun" aria-hidden="true"></div>
         <div class="plate-shadow" aria-hidden="true"></div>
@@ -56,16 +55,22 @@
 
     <section class="ratio-lab" id="ratio-lab" aria-labelledby="lab-title">
       <div class="lab-heading">
-        <p class="section-number">01 / Turn the memory</p>
+        <p class="section-number">01 / Tune the bowl</p>
         <h2 id="lab-title">Where does home sit?</h2>
-        <p>A real range control is hiding in plain sight: click it, tap it, or use the arrow keys. The story and bowl answer together.</p>
+        <p>Start with a native range control, then place the bowl inside a moment and give the finished card one private word.</p>
       </div>
 
-      <div class="dial-card">
-        <div class="ratio-readout" aria-hidden="true">
-          <span id="tomato-number">50</span>
-          <i>:</i>
-          <span id="egg-number">50</span>
+      <form class="dial-card" id="memory-maker">
+        <div class="ratio-visual" aria-hidden="true">
+          <div class="ratio-readout">
+            <span id="tomato-number">50</span>
+            <i>:</i>
+            <span id="egg-number">50</span>
+          </div>
+          <div class="lab-bowl">
+            <div class="lab-food"><i class="tomato mini-t1"></i><i class="tomato mini-t2"></i><i class="egg mini-e1"></i><i class="egg mini-e2"></i></div>
+            <div class="lab-bowl-face"><span>家</span></div>
+          </div>
         </div>
         <div class="range-wrap">
           <label for="ratio">Your tomato-to-egg memory</label>
@@ -81,18 +86,37 @@
           <p id="ratio-copy">Bright edges, soft folds, neither asking to be the lead.</p>
           <p id="ratio-status" class="visually-hidden" aria-live="polite">Balanced: 50 percent tomato and 50 percent egg.</p>
         </div>
-      </div>
+        <fieldset class="moment-picker">
+          <legend><span>02</span> Place the bowl in a moment</legend>
+          <input type="radio" name="moment" id="moment-weeknight" value="weeknight">
+          <label for="moment-weeknight"><b>Weeknight glow</b><span>Keys down, dinner up.</span></label>
+          <input type="radio" name="moment" id="moment-rain" value="rain" checked>
+          <label for="moment-rain"><b>Rain-window quiet</b><span>Wet glass, slower spoons.</span></label>
+          <input type="radio" name="moment" id="moment-sunday" value="sunday">
+          <label for="moment-sunday"><b>Sunday unhurried</b><span>One more bowl, nowhere to rush.</span></label>
+        </fieldset>
+        <div class="dedication-field">
+          <label for="memory-word"><span>03</span> Keep one private word <small>(optional)</small></label>
+          <div>
+            <input id="memory-word" name="memory-word" type="text" maxlength="24" autocomplete="off" placeholder="a person, place, or season">
+            <small>It stays in this browser tab. Nothing is stored or sent.</small>
+          </div>
+        </div>
+        <button class="seal-action" type="submit">Seal my memory card <span aria-hidden="true">→</span></button>
+        <p class="maker-status visually-hidden" id="maker-status" aria-live="polite"></p>
+      </form>
 
       <div class="no-js-ratios" aria-label="Three example ratios available without JavaScript">
         <article><b>40:60</b><h3>Soft landing</h3><p>Egg-led, gentle, and made for slow mornings.</p></article>
         <article><b>50:50</b><h3>Quiet balance</h3><p>Bright edges and soft folds meet in the middle.</p></article>
         <article><b>60:40</b><h3>Window light</h3><p>Tomato-led, vivid, and a little more awake.</p></article>
+        <p>Place any ratio in a weeknight glow, rain-window quiet, or an unhurried Sunday. With JavaScript off, the full idea remains readable; personalization and copying become manual.</p>
       </div>
     </section>
 
     <section class="why" id="why" aria-labelledby="why-title">
       <div class="why-title">
-        <p class="section-number">02 / Why a ratio?</p>
+        <p class="section-number">04 / Why a ratio?</p>
         <h2 id="why-title">Recipes record steps.<br><em>Ratios record people.</em></h2>
       </div>
       <div class="why-grid">
@@ -108,26 +132,37 @@
         </article>
         <article>
           <span>03</span>
-          <h3>Made to include</h3>
-          <p>Keyboard controls, strong focus, reduced motion, 320-pixel reflow, and a full no-JS path are part of the design.</p>
+          <h3>Private by design</h3>
+          <p>Your optional word never leaves the tab. Keyboard controls, reduced motion, 320-pixel reflow, and a full no-JS path stay part of the design.</p>
         </article>
       </div>
     </section>
 
     <section class="keep" id="keep" aria-labelledby="keep-title">
-      <p class="section-number">03 / Keep the feeling</p>
-      <div>
-        <h2 id="keep-title">Write down the ratio.<br>Leave the recipe open.</h2>
-        <p id="share-line">My Home Ratio is 50:50 — bright edges, soft folds.</p>
-        <button type="button" id="copy-ratio">Copy my ratio</button>
+      <p class="section-number">05 / Keep the feeling</p>
+      <div class="keep-copy">
+        <h2 id="keep-title">A small card for<br>a feeling without a recipe.</h2>
+        <p id="share-line">My Home Ratio is 50:50 — rain-window quiet, with bright edges and soft folds.</p>
+        <div class="keep-actions">
+          <button type="button" id="copy-ratio">Copy my memory card</button>
+          <a href="#ratio-lab">Tune another</a>
+        </div>
         <p class="copy-status" id="copy-status" aria-live="polite"></p>
-        <noscript><p>JavaScript is off, so copying is manual. Your complete ratio guide is still above.</p></noscript>
+        <noscript><p>JavaScript is off, so copying is manual. Your complete ratio and moment guide is still above.</p></noscript>
       </div>
+      <article class="memory-card" id="memory-card" tabindex="-1" aria-labelledby="memory-card-title">
+        <header><span>家</span><p>The Home Ratio<br><small>browser-made memory card</small></p></header>
+        <p class="card-ratio"><span id="card-tomato">50</span><i>:</i><span id="card-egg">50</span></p>
+        <h3 id="memory-card-title">Quietly balanced</h3>
+        <p id="card-moment">Rain-window quiet · Wet glass, slower spoons.</p>
+        <p class="card-for" id="card-for" hidden></p>
+        <footer><span>番茄 + 鸡蛋</span><b>Made locally. Kept privately.</b></footer>
+      </article>
     </section>
   </main>
 
   <footer>
-    <a class="brand inverse" href="#main"><span aria-hidden="true">家</span><b>The Home Ratio</b></a>
+    <a class="brand inverse" href="#main" aria-label="The Home Ratio, back to top"><span aria-hidden="true">家</span><b>The Home Ratio</b></a>
     <p>Original words and browser-native shapes.<br>No images. No web fonts. No external runtime code.</p>
     <p>Perfect Landing entry<br>DEV Frontend Challenge · 2026</p>
   </footer>

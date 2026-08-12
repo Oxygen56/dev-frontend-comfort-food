@@ -37,12 +37,14 @@ const outputs = [];
 
 outputs.push(await record('css-art', '/css-art/', async page => {
   await page.locator('label[for="tomato-led"]').click();
+  await page.locator('#tomato-led').waitFor({ state: 'attached' });
   await page.waitForTimeout(900);
   await page.locator('label[for="balanced"]').click();
   await page.waitForTimeout(900);
   await page.locator('label[for="egg-led"]').click();
   await page.waitForTimeout(900);
   await page.locator('label[for="serve-warm"]').click();
+  await page.locator('#serve-warm').waitFor({ state: 'attached' });
   await page.waitForTimeout(2300);
 }));
 
@@ -52,10 +54,15 @@ outputs.push(await record('perfect-landing', '/perfect-landing/', async page => 
   const range = page.locator('#ratio');
   await range.fill('35');
   await page.waitForTimeout(900);
-  await range.fill('50');
-  await page.waitForTimeout(900);
   await range.fill('65');
-  await page.waitForTimeout(1200);
+  await page.waitForTimeout(900);
+  await page.locator('label[for="moment-sunday"]').click();
+  await page.waitForTimeout(800);
+  await page.locator('#memory-word').fill('late summer');
+  await page.waitForTimeout(700);
+  await page.locator('.seal-action').click();
+  await page.locator('#memory-card').waitFor({ state: 'visible' });
+  await page.waitForTimeout(1500);
   await page.locator('#keep').scrollIntoViewIfNeeded();
   await page.waitForTimeout(900);
 }));

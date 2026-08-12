@@ -9,7 +9,7 @@
 - [x] English technical explanations complete
 - [x] Codex assistance disclosed in both drafts
 - [x] Third-party-rights review complete; no external assets shipped
-- [x] Final local gate: 14/14
+- [x] Upgraded final release gate: 69/69 across Chromium, Firefox, and WebKit
 - [x] Public repository reachable without authentication
 - [x] GitHub Pages demo reachable without authentication
 - [x] DEV challenge registration confirmed in logged-in UI (`Signed Up`)
@@ -21,6 +21,7 @@
 - [x] Challenge marker present
 - [x] Published page reachable logged out
 - [x] Listed in challenge feed
+- [ ] Upgraded demo, source, and article text synchronized publicly
 
 Published entry: https://dev.to/oxygen56/the-home-ratio-a-pure-css-serving-ritual-5268
 
@@ -31,6 +32,7 @@ Published entry: https://dev.to/oxygen56/the-home-ratio-a-pure-css-serving-ritua
 - [x] Challenge marker present
 - [x] Published page reachable logged out
 - [x] Listed in challenge feed
+- [ ] Upgraded demo, source, and article text synchronized publicly
 
 Published entry: https://dev.to/oxygen56/the-home-ratio-a-landing-page-tuned-by-memory-1af9
 

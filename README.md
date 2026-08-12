@@ -4,8 +4,8 @@ Two original entries for the [DEV Frontend Challenge: Comfort Food](https://dev.
 
 ## Entries
 
-- **[CSS Art](https://oxygen56.github.io/dev-frontend-comfort-food/css-art/):** a pure HTML/CSS serving ritual. Choose tomato-led, balanced, or egg-led; then lift the lid. No JavaScript, SVG, canvas, images, web fonts, or third-party code. [DEV submission](https://dev.to/oxygen56/the-home-ratio-a-pure-css-serving-ritual-5268).
-- **[Perfect Landing](https://oxygen56.github.io/dev-frontend-comfort-food/perfect-landing/):** a progressive-enhancement landing page with a keyboard-native ratio dial. JavaScript makes the bowl and copy respond; the complete story and three ratios remain available without it. [DEV submission](https://dev.to/oxygen56/the-home-ratio-a-landing-page-tuned-by-memory-1af9).
+- **[CSS Art](https://oxygen56.github.io/dev-frontend-comfort-food/css-art/):** a pure HTML/CSS two-act artwork. Three ratios redraw an entire remembered room; serving the table reveals steam and a second place setting. No JavaScript, SVG, canvas, imported images, web fonts, or third-party code. [DEV submission](https://dev.to/oxygen56/the-home-ratio-a-pure-css-serving-ritual-5268).
+- **[Perfect Landing](https://oxygen56.github.io/dev-frontend-comfort-food/perfect-landing/):** a progressive-enhancement memory-card maker. Tune a keyboard-native ratio, choose a moment, and optionally add one local-only word. The complete guide remains when JavaScript is unavailable or fails to load. [DEV submission](https://dev.to/oxygen56/the-home-ratio-a-landing-page-tuned-by-memory-1af9).
 
 Open the [two-entry demo hub](https://oxygen56.github.io/dev-frontend-comfort-food/), or serve the `docs` directory with any static server.
 
@@ -16,7 +16,7 @@ npm install
 npm test
 ```
 
-The suite checks the judge hub and both entries in Chromium, Firefox, and WebKit, including automated accessibility scans, 320 px reflow, keyboard interaction, slow-connection behavior, reduced-motion behavior, no-JavaScript fallback, and local-only assets. The final post-publication gate passed **57/57 checks**.
+The release suite checks the judge hub and both entries in Chromium, Firefox, and WebKit, including desktop and mobile accessibility scans, 320 px reflow, keyboard interaction, whole-room CSS state changes, the complete memory-card ritual, input safety and privacy, slow connections, reduced motion, no-JavaScript and failed-script fallbacks, and local-only assets. Visual captures run separately with `npm run evidence:capture` so ordinary tests stay read-only.
 
 ## Judge path
 

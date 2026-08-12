@@ -3,8 +3,9 @@
 ## Shipped work
 
 - HTML, CSS, JavaScript, visual composition, interaction design, and English copy: original for this challenge.
-- Images, icons, SVG, canvas art, audio, video, external fonts, external APIs, and datasets: none.
-- Runtime dependencies: none. Both entries are static files and use browser-native features only.
+- Entry artwork uses no imported images, icons, SVG, canvas art, audio, external fonts, external APIs, or datasets.
+- The public hub and DEV posts include original PNG screenshots plus silent GIF/MP4 screen recordings made directly from the two browser-rendered entries. They contain no third-party or AI-generated media.
+- Runtime code dependencies: none. Both entries are static files and use browser-native features only.
 - Development-only dependencies: Playwright, axe-core integration for Playwright, and http-server. They are not shipped to the browser and retain their own licenses in `node_modules`.
 
 ## Cultural scope

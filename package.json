@@ -6,6 +6,8 @@
   "scripts": {
     "serve": "http-server docs -p 43217 -c-1",
     "test": "playwright test",
+    "test:release": "playwright test",
+    "evidence:capture": "playwright test --config=playwright.evidence.config.mjs",
     "test:headed": "playwright test --headed",
     "test:update-snapshots": "playwright test --update-snapshots",
     "demos:capture": "node scripts/capture-demos.mjs"
