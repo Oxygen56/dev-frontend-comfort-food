@@ -3,6 +3,7 @@ node_modules/
 AGENTS.md
 reports/playwright-report/
 reports/test-results/
+reports/demo-recordings/
 test-results/
 playwright-report/
 experiments/

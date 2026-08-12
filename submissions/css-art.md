@@ -18,6 +18,8 @@ There is no “authentic” winning ratio. The interaction is the point: a share
 
 ## Demo
 
+![A short silent tour of the ratio choices and the CSS-drawn lid lifting](https://oxygen56.github.io/dev-frontend-comfort-food/assets/css-art-demo.gif)
+
 {% embed https://oxygen56.github.io/dev-frontend-comfort-food/css-art/ %}
 
 - [Open the live CSS Art experience](https://oxygen56.github.io/dev-frontend-comfort-food/css-art/)
@@ -41,7 +43,7 @@ There is no JavaScript, SVG, canvas, image, icon library, external font, or runt
 
 The controls are native form elements with visible labels and strong focus states. The complete piece works with touch, mouse, Tab, arrow keys, Space, and Enter. It reflows without horizontal scrolling at 320 px, and `prefers-reduced-motion` reduces every animation and transition to an effectively static state.
 
-The repository includes automated browser checks for keyboard operation, 320 px reflow, reduced motion, external requests, console errors, and WCAG A/AA issues with axe-core.
+The repository includes automated browser checks for keyboard operation, 320 px reflow, slow connections, reduced motion, external requests, console errors, and WCAG A/AA issues with axe-core. The final judge simulation passed across Chromium, Firefox, and WebKit.
 
 ### AI assistance and rights
 

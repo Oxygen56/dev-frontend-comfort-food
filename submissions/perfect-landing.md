@@ -18,6 +18,8 @@ The result is not a recipe calculator. It is an invitation to notice the version
 
 ## Demo
 
+![A short silent tour of the native ratio dial changing the memory and bowl](https://oxygen56.github.io/dev-frontend-comfort-food/assets/perfect-landing-demo.gif)
+
 {% embed https://oxygen56.github.io/dev-frontend-comfort-food/perfect-landing/ %}
 
 - [Open the live Perfect Landing experience](https://oxygen56.github.io/dev-frontend-comfort-food/perfect-landing/)
@@ -42,7 +44,8 @@ The page was designed and tested for:
 - `prefers-reduced-motion`;
 - a complete no-JavaScript path;
 - WCAG A/AA automated checks;
-- zero external runtime requests.
+- zero external runtime requests;
+- final verification in Chromium, Firefox, and WebKit, including a slow-connection path.
 
 ### AI assistance and rights
 

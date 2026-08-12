@@ -43,3 +43,9 @@ Published and publicly verified on 2026-08-12 Asia/Shanghai:
 - Perfect Landing: https://dev.to/oxygen56/the-home-ratio-a-landing-page-tuned-by-memory-1af9
 
 Both entries include their intended cover image, official challenge tags and marker, live demo, public source link, AI-assistance disclosure, and third-party-rights statement. Both titles are visible in the public `frontendchallenge` tag feed.
+
+## Post-publication judge simulation
+
+On 2026-08-12 Asia/Shanghai, the acceptance suite was run across Chromium, Firefox, and WebKit. The first cross-browser baseline passed **36/36 checks**. After upgrading the judge hub and adding slow-connection coverage, the final suite passed **57/57 checks**. This includes console/runtime errors, external requests, WCAG A/AA automated scans, 320 px reflow, reduced motion, keyboard-native signature interactions, the Perfect Landing no-JavaScript path, and independent hub links.
+
+The baseline and final runs are recorded at `experiments/runs/20260812-104443_cross-browser-judge-audit` and `experiments/runs/20260812-105359_final-judge-experience-gate-v2`.

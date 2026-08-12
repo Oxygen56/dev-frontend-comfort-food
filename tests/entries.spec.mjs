@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
 const entries = [
+  { name: 'Judge Hub', path: '/' },
   { name: 'CSS Art', path: '/css-art/' },
   { name: 'Perfect Landing', path: '/perfect-landing/' },
 ];
@@ -58,6 +59,15 @@ for (const entry of entries) {
     });
     expect(longest).toBeLessThanOrEqual(1);
   });
+
+  test(`${entry.name}: remains understandable on a slow connection`, async ({ page }) => {
+    await page.route('**/*', async route => {
+      await new Promise(resolve => setTimeout(resolve, 350));
+      await route.continue();
+    });
+    await page.goto(entry.path, { waitUntil: 'domcontentloaded' });
+    await expect(page.locator('h1')).toBeVisible({ timeout: 5_000 });
+  });
 }
 
 test('CSS Art: all signature interactions work from the keyboard with zero JavaScript', async ({ page }) => {
@@ -104,6 +114,9 @@ test('Perfect Landing: no-JS fallback keeps the complete choice set and content 
 
 test('Hub links to two independently addressable entries', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByRole('link', { name: /CSS Art/ })).toHaveAttribute('href', 'css-art/');
-  await expect(page.getByRole('link', { name: /Perfect Landing/ })).toHaveAttribute('href', 'perfect-landing/');
+  await expect(page.locator('a[href="css-art/"]')).toHaveCount(1);
+  await expect(page.locator('a[href="perfect-landing/"]')).toHaveCount(1);
+  await expect(page.locator('video')).toHaveCount(2);
+  await expect(page.locator('source[src="assets/css-art-demo.mp4"]')).toHaveCount(1);
+  await expect(page.locator('source[src="assets/perfect-landing-demo.mp4"]')).toHaveCount(1);
 });
