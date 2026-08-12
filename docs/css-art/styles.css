@@ -180,7 +180,10 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
   .bowl { width: min(88vw, 28rem); top: 43%; }
   .lid { width: min(85vw, 27rem); height: min(42vw, 11rem); top: 43%; }
   .lid-toggle:checked ~ .table .lid { transform: translate(28%, -138%) rotate(24deg); }
-  .waiting-place { left: 2%; bottom: 13%; width: 31%; }
+  .waiting-place { left: 1%; bottom: 13%; width: 24%; }
+  .waiting-place .rice-bowl { width: 90%; }
+  .waiting-place > span { font-size: .45rem; letter-spacing: .05em; }
+  .serve-control { bottom: 1.2rem; min-width: 9.5rem; padding: .75rem .8rem; }
   .serve-message { right: 1rem; bottom: 7rem; max-width: 9rem; }
   .css-stamp { display: none; }
   .afterword { grid-template-columns: 1fr; }
@@ -195,7 +198,7 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
   h1 { font-size: 3.6rem; }
   .memory-note { right: 4%; }
   .window { left: 4%; }
-  .serve-control { bottom: 1.2rem; min-width: 10.5rem; }
+  .serve-control { bottom: 1.2rem; min-width: 9.5rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -49,6 +49,6 @@ The repository includes automated browser checks for keyboard operation, 320 px 
 
 ### AI assistance and rights
 
-OpenAI Codex was used as the primary implementation assistant for research synthesis, interaction prototyping, HTML/CSS development, test authoring, and technical-writing support. A human directed the concept and acceptance criteria and reviewed the final source, behavior, accessibility evidence, third-party-rights status, and public claims.
+OpenAI Codex was used as the primary implementation assistant for research synthesis, interaction prototyping, HTML/CSS development, test authoring, and technical-writing support. The author directed the concept and acceptance criteria. Final review covered the source, behavior, accessibility evidence, third-party-rights status, and public claims.
 
-All artwork and copy are original to this entry. The screenshots and silent demo are direct recordings of that original browser-rendered work. No generated media or third-party visual, font, text, brand mark, API, or dataset is included.
+All artwork and copy are original to this entry. The screenshots and silent demo are direct recordings of that original browser-rendered work. No AI-generated media or third-party visual, font, text, brand mark, API, or dataset is included.

@@ -19,5 +19,12 @@ for (const capture of captures) {
     await page.setViewportSize({ width: 320, height: 800 });
     await page.goto(capture.path);
     await page.screenshot({ path: `reports/screenshots/${capture.name}-320.png`, fullPage: true });
+    if (capture.name === 'css-art') {
+      await page.locator('.serve-control').click();
+      await expect(page.locator('#serve-warm')).toBeChecked();
+      await page.waitForTimeout(800);
+      await page.evaluate(() => window.scrollTo(0, 0));
+      await page.screenshot({ path: 'reports/screenshots/css-art-320-revealed.png', fullPage: true });
+    }
   });
 }

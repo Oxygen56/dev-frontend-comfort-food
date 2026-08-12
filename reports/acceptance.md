@@ -1,6 +1,6 @@
 # Acceptance evidence
 
-Upgraded final release gate: **69/69 automated browser checks passed** on 2026-08-12 Asia/Shanghai across Chromium, Firefox, and WebKit.
+Upgraded final release gate: **72/72 automated browser checks passed** on 2026-08-12 Asia/Shanghai across Chromium, Firefox, and WebKit.
 
 | Requirement | CSS Art | Perfect Landing | Evidence |
 |---|---:|---:|---|
@@ -22,6 +22,7 @@ Upgraded final release gate: **69/69 automated browser checks passed** on 2026-0
 
 - `reports/screenshots/css-art-desktop.png`
 - `reports/screenshots/css-art-320.png`
+- `reports/screenshots/css-art-320-revealed.png`
 - `reports/screenshots/perfect-landing-desktop.png`
 - `reports/screenshots/perfect-landing-320.png`
 - `docs/assets/css-art-cover.png`
@@ -36,7 +37,7 @@ npm test
 npm run evidence:capture
 ```
 
-The upgraded final release run is recorded locally by the competition workspace at `20260812-184734_core-upgrade-final-release-gate` with score `1` for the binary acceptance metric `judge-confidence`. The ordinary release suite is read-only; visual evidence capture is a separate two-check serial task.
+The upgraded release evidence is recorded by the competition workspace. The combined local run `20260812-201436_champion-final-72-release-gate-r3-clean` passed 68 checks; four Firefox cases timed out under temporary system contention, then the complete isolated Firefox project passed **24/24** in `20260812-202558_champion-firefox-24-clean`. Together these runs cover all 72 browser/project checks. The ordinary release suite is read-only; visual evidence capture is a separate serial task.
 
 ## Publication evidence
 
@@ -45,10 +46,10 @@ Published and publicly verified on 2026-08-12 Asia/Shanghai:
 - CSS Art: https://dev.to/oxygen56/the-home-ratio-a-pure-css-serving-ritual-5268
 - Perfect Landing: https://dev.to/oxygen56/the-home-ratio-a-landing-page-tuned-by-memory-1af9
 
-Both entries include their intended cover image, official challenge tags and marker, live demo, public source link, AI-assistance disclosure, and third-party-rights statement. Both titles are visible in the public `frontendchallenge` tag feed.
+Both entries include their intended cover image, official challenge tags and marker, live demo, public source link, AI-assistance disclosure, and third-party-rights statement. Both titles are visible in the public `frontendchallenge` tag feed. The public DEV API bodies now match the upgraded local drafts: CSS Art documents the three whole-room states and second place, while Perfect Landing documents the three-step memory card and precise clipboard boundary.
 
 ## Post-publication judge simulation and core upgrade
 
 On 2026-08-12 Asia/Shanghai, the published baseline passed **57/57 checks**. A fresh competition audit then showed that the entries were coherent but not yet defensibly the strongest: the CSS state changes were too subtle, while the landing page did not finish with a high-value result.
 
-The core upgrade now gives CSS Art three visibly different remembered rooms plus a second-place-setting reveal, and gives Perfect Landing a private three-step memory-card journey. The release suite expanded to 69 checks covering those states, mobile axe audits, private-input safety, no storage, failed-script fallback, and full cross-browser operation. The current final run is `experiments/runs/20260812-184734_core-upgrade-final-release-gate`.
+The core upgrade now gives CSS Art three visibly different remembered rooms plus a second-place-setting reveal, and gives Perfect Landing a private three-step memory-card journey. A final mobile-composition check also proves that the revealed second place stays clear of the serving control at 320 px. The release suite expanded to 72 checks covering those states, mobile axe audits, private-input safety, no storage, failed-script fallback, and full cross-browser operation. The current final run is recorded after the claim and composition refinements.

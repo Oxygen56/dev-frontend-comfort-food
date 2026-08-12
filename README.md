@@ -1,6 +1,6 @@
 # The Home Ratio / 家的比例
 
-Two original entries for the [DEV Frontend Challenge: Comfort Food](https://dev.to/challenges/frontend-2026-07-29), built around one observation: tomato and egg can be the same dish in every home and still carry a different remembered ratio.
+Two original entries for the [DEV Frontend Challenge: Comfort Food](https://dev.to/challenges/frontend-2026-07-29), built around one observation: one tomato-and-egg dish can open into several different remembered ratios.
 
 ## Entries
 
@@ -24,7 +24,7 @@ The [two-entry demo hub](https://oxygen56.github.io/dev-frontend-comfort-food/) 
 
 ## Rights and AI disclosure
 
-All shipped visuals and copy are original to this project. The pages use only native HTML, CSS, JavaScript, and system fonts. OpenAI Codex was used as the primary implementation assistant under human direction and review; the final source, accessibility behavior, rights status, and submission claims were reviewed for this entry. See `ATTRIBUTION.md` and `AI_DISCLOSURE.md`.
+All shipped visuals and copy are original to this project. The pages use only native HTML, CSS, JavaScript, and system fonts. OpenAI Codex was used as the primary implementation assistant. The author directed the concept and acceptance criteria; final review covered source, accessibility behavior, rights status, and submission claims. See `ATTRIBUTION.md` and `AI_DISCLOSURE.md`.
 
 ## Deadline control
 

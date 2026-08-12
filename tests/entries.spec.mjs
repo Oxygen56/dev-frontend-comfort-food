@@ -118,6 +118,25 @@ test('CSS Art: every ratio changes the whole remembered room', async ({ page }) 
   expect(eggRoom).not.toEqual(tomatoRoom);
 });
 
+test('CSS Art: the mobile reveal keeps the second place clear of the serving control', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 568 });
+  await page.goto('/css-art/');
+  await page.locator('#serve-warm').focus();
+  await page.locator('#serve-warm').press('Space');
+  await expect(page.locator('#serve-warm')).toBeChecked();
+  const waitingPlace = await page.locator('.waiting-place').boundingBox();
+  const serveControl = await page.locator('.serve-control').boundingBox();
+  expect(waitingPlace).not.toBeNull();
+  expect(serveControl).not.toBeNull();
+  const overlaps = !(
+    waitingPlace.x + waitingPlace.width <= serveControl.x ||
+    serveControl.x + serveControl.width <= waitingPlace.x ||
+    waitingPlace.y + waitingPlace.height <= serveControl.y ||
+    serveControl.y + serveControl.height <= waitingPlace.y
+  );
+  expect(overlaps).toBe(false);
+});
+
 test('Perfect Landing: the native dial responds to arrow keys and updates one coherent memory', async ({ page }) => {
   await page.goto('/perfect-landing/');
   const range = page.locator('#ratio');

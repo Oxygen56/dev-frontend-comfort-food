@@ -18,7 +18,7 @@ The page begins with one culturally specific dish—番茄炒蛋, tomato and egg
 2. place the bowl in a weeknight glow, rain-window quiet, or an unhurried Sunday;
 3. optionally keep one private word for a person, place, or season.
 
-The page seals those choices into an original memory card and a copyable sentence. The optional word never leaves the browser tab: there is no account, network request, cookie, browser storage, or analytics endpoint.
+The page seals those choices into an original memory card and a copyable sentence. The page does not store or send the optional word: there is no account, network request, cookie, browser storage, or analytics endpoint. It reaches the device clipboard only when the visitor explicitly chooses Copy.
 
 The result is not a recipe calculator. It is a small interaction that gives an unwritten preference a shape worth keeping.
 
@@ -56,6 +56,6 @@ The page was designed and tested for:
 
 ### AI assistance and rights
 
-OpenAI Codex was used as the primary implementation assistant for research synthesis, interaction prototyping, HTML/CSS/JavaScript development, test authoring, and technical-writing support. A human directed the concept and acceptance criteria and reviewed the final source, behavior, accessibility evidence, third-party-rights status, and public claims.
+OpenAI Codex was used as the primary implementation assistant for research synthesis, interaction prototyping, HTML/CSS/JavaScript development, test authoring, and technical-writing support. The author directed the concept and acceptance criteria. Final review covered the source, behavior, accessibility evidence, third-party-rights status, and public claims.
 
-All artwork and copy are original to this entry. The screenshots and silent demo are direct recordings of that original browser-rendered work. No generated media or third-party visual, font, text, brand mark, API, or dataset is included.
+All artwork and copy are original to this entry. The screenshots and silent demo are direct recordings of that original browser-rendered work. No AI-generated media or third-party visual, font, text, brand mark, API, or dataset is included.
